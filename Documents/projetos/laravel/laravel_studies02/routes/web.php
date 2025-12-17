@@ -6,4 +6,4 @@ Route::get('/', function() {
     echo 'blade layouts';
 });
 
-Route::view('/home', 'home');
+Route::view('/home', 'home', ['myName' => 'João']);
