@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('page_title')</title>
+    <!-- bootstrap -->
+     <link rel="stylesheet" href="{{ asset('assets/bootstrap/bootstrap.min.css') }}">
 </head>
 <body>
-    <h1>Texto top no layout</h1>
-        @yield('content')
-    <h1>Texto bottom no layout</h1>
+    @include('layouts.navbar')
+
+    @yield('content')
+
+    <!-- bootstrap -->
+     <script src="{{ asset('assets/bootstrap/bootstrap.bundle.min.js') }}"></script>
 </body>
 </html>
