@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function() {
     echo 'blade layouts';
 });
 
-Route::view('/home', 'home', ['myName' => 'João']);
+Route::get('/show', [MainController::class, 'showPage']);
