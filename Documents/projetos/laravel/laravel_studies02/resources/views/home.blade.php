@@ -1,7 +1,7 @@
 @extends('layouts.main_layout')
 @section('content')
 
-    <div class="text-center">
+    <!-- <div class="text-center">
     @foreach ($pessoas_linguas as $pessoa => $linguas)
     
     {{-- <x-card-pessoa :nome-pessoa="$pessoa" :linguas-pessoa="$linguas"/> --}} 
@@ -9,6 +9,40 @@
     <x-card-pessoa :$pessoa :$linguas/>
 
     @endforeach
-    </div>
+    </div> -->
+
+
+    {{-- componentes e slots --}}
+
+    <!-- <div>
+        <h4 class="text-info">Como funciona um Slot?</h4>
+        <x-other-card>
+            <h1 class="text-danger">Este é o Slot!</h1>
+        </x-other-card>
+    </div> -->
+
+    <!-- <x-multi-slot>
+        <x-slot:title>Este é o título</x-slot>
+        <x-slot:content>Este é o conteúdo</x-slot>
+        <x-slot:footer>
+            <ul>
+                <li>ítem 1</li>
+                <li>ítem 2</li>
+                <li>ítem 3</li>
+            </ul>
+        </x-slot>
+    </x-multi-slot> -->
+
+
+<h4>Componente anônimo</h4>
+<x-alert-card>
+    Primeira mensagem
+</x-alert-card>
+<x-alert-card>
+    Segunda mensagem
+</x-alert-card>
+<x-alert-card>
+    Terceira mensagem
+</x-alert-card>
 
 @endsection
